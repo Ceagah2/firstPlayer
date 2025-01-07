@@ -5,4 +5,5 @@ export interface IButton extends TouchableOpacityProps {
   icon?: string;
   title?: string;
   variant: ButtonVariant;
+  borderRadius?: number;
 }
