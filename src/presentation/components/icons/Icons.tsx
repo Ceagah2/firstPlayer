@@ -17,6 +17,7 @@ type IconType = {
   onPress: () => void
 }
 
+
 const Icon = ({ name, size = 24, color = "black", onPress }: IconType) => {
   const iconMap = {
     checkcircleo: AntDesign,
@@ -45,8 +46,10 @@ const Icon = ({ name, size = 24, color = "black", onPress }: IconType) => {
     "chevron-left": Octicons,
     "chevron-right": Octicons,
   };
+  type IconName = keyof typeof iconMap;
 
-  const IconComponent = iconMap[name];
+  const IconComponent = iconMap[name as IconName];
+
 
   if (!IconComponent) {
     console.error(`Ícone não encontrado: ${name}`);

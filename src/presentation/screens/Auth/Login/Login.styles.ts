@@ -30,15 +30,28 @@ export const LoginForm = styled.View`
 
 export const PassRecoverButton = styled.TouchableOpacity`
   height: 30px;
+  width: 120px;
   justify-content: center;
   align-items: flex-end;
   margin-top: 16px;
   background-color: transparent;
-  align-self: end;
+  align-self: start;
 `;
 export const ButtonText = styled.Text`
   font-family: ${fonts.archivo[200]};
   color: ${colors.neutrals["01"]};
+  font-size: ${sizes.body3};
+`;
+export const ErrorContainer = styled.View`
+  width: 400px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 8px;
+  padding-left: 8px;
+`;
+export const ErrorText = styled.Text`
+  font-family: ${fonts.archivo[200]};
+  color: ${colors.alternative["01"]};
   font-size: ${sizes.body3};
 `;
 export const ButtonContainer = styled.View`

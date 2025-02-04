@@ -7,7 +7,7 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
   border-bottom-width: 1px;
-  padding-left: 10px;
+  
 `;
 
 export const Input = styled.TextInput`
